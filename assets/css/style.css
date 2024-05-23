@@ -77,7 +77,13 @@ select {
     object-fit: cover;
     vertical-align: top;
 }
-
+img {
+    transition: all 0.4s ease;
+  }
+img:hover {
+    -webkit-filter: grayscale(100%); 
+      filter: grayscale(100%);
+  }
 .btn {
     background-color: #0037a1;
     border: none;
@@ -87,6 +93,9 @@ select {
     text-decoration: none;
     font-size: 16px;
     border-radius: 7px;
+}
+.btn:hover{
+    transform: scale(1.2);
 }
 
 /* Paginación */
